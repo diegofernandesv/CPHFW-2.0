@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Schedule</title>
+    <link rel="stylesheet" href="../styles/stylesyourschedule.css">
+</head>
+<body>
+    <div class="schedule-header">
+    <h1>Your Schedule</h1>
+    </div>
+
+
+    <nav class="navbar">
+        <a href="events.html" class="nav-item active" data-page="events.html">
+            <img src="../icons/add event.png" alt="Events Icon" class="icon">
+            <span class="label">EVENTS</span>
+        </a>
+        <a href="designers.html" class="nav-item" data-page="designers.html">
+            <img src="../icons/designer.png" alt="Designers Icon" class="icon">
+        </a>
+        <a href="map.html" class="nav-item" data-page="map.html">
+            <img src="../icons/map.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="guide.html" class="nav-item" data-page="guide.html">
+            <img src="../icons/local guide.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="profile.html" class="nav-item" data-page="profile.html">
+            <img src="../icons/profile.png" alt="Profile Icon" class="icon">
+        </a>
+    </nav>
+
+</nav>
+<div class="content-container">
+    <nav class="weekdays">
+        <div class="day-item">
+            <a href="your-schedule.html" class="text">Tuesday</a>
+            <a href="your-schedule.html" class="numbers">5</a>
+        </div>
+    
+    
+        <div class="day-item active" onclick="showInfo('tuesday')">
+            <div class="text1 active">Wednesday</div>
+            <div class="numbers1 active" onclick="showInfo('tuesday5')">6</div>
+        </div>
+
+        <div class="day-item2 " onclick="showInfo('thursday')">
+            <a href="thursday.html" class="text">Thursday</a>
+            <a href="thursday.html" class="numbers">7</a>
+        </div>
+    
+        <div class="day-item3" onclick="showInfo('friday')">
+            <a href="friday.html" class="text">Friday</a>
+            <a href="friday.html" class="numbers">8</a>
+        </div>
+    
+        <div class="day-item" onclick="showInfo('saturday')">
+            <a href="saturday.html" class="text">Saturday</a>
+            <a href="saturday.html" class="numbers">9</a>
+        </div>
+    </nav>
+</div>
+    <div id="schedule-container"></div>
+
+    <!-- Back to Events Page Button -->
+    <button class="back-button" onclick="window.location.href='events.html'">Back to Events</button>
+
+    <script>
+        const schedule = JSON.parse(localStorage.getItem('schedule')) || [];
+        const container = document.getElementById('schedule-container');
+
+        function displaySchedule() {
+            container.innerHTML = ''; // Clear container
+
+            schedule.forEach((event, index) => {
+                const eventElement = document.createElement('div');
+                eventElement.classList.add('event-item');
+                eventElement.innerHTML = `
+                    <img src="${event.image}" alt="${event.title}" class="event-image">
+                        <div class="event-details">
+                            <div class="event-time">${event.time}</div>
+                            <h2 class="event-title">${event.title}</h2>
+                        </div>
+                        <img src="../icons/Delete.png" alt="Delete" class="delete-button" onclick="deleteEvent(${index})">
+                `;
+                container.appendChild(eventElement);
+            });
+        }
+
+        // Delete individual event
+        function deleteEvent(index) {
+            schedule.splice(index, 1);  // Remove the event from the array
+            localStorage.setItem('schedule', JSON.stringify(schedule));  // Update local storage
+            displaySchedule();  // Refresh the displayed schedule
+        }
+
+        displaySchedule(); // Initial call to display schedule
+    </script>
+
+</body>
+</html>

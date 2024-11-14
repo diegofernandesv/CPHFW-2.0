@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(navbar.css);
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 46px; /* Increased title size for better visibility */
+  font-weight: 600;
+  margin-bottom: 24px; /* Removed margin so it sticks to the top */
+  background-image: url("../images/gradient\ designer.png");
+  padding: 42px 16px; /* Added padding for better spacing */
+  width: 100%; /* Ensure it covers full width */
+  text-align: left; /* Center-align the title */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  border-radius: 12px;
+  color: #fff;
+}
+
+
+.designer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.letter-group {
+  margin-bottom: 15px; /* Reduced space between letter groups */
+}
+
+/* Apply Instrument Serif italic to letter */
+.letter {
+  font-size: 36px; /* Increased font size for letters */
+  font-weight: 10;
+  margin-bottom: 5px; /* Reduced margin for letters */
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  text-align: left;
+  margin-left: 16px;
+}
+
+/* Link style for name, brand, and arrow */
+.designer-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherit the color from the parent element */
+  display: flex; /* Flexbox ensures that the content stays in one line */
+  align-items: center; /* Keep the items vertically aligned */
+  justify-content: space-between; /* Space out the name, brand, and arrow */
+  width: 100%; /* Ensure the link takes full width */
+}
+
+/* Adjustments to the designer-item (if necessary) */
+.designer-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 5px 0;
+  border-bottom: 1px solid #d4d2d2;
+  gap: 10px; /* Space between each item */
+}
+
+.name {
+  font-size: 20px; /* Smaller font size */
+  color: #333;
+  margin: 0;
+  flex: 0 0 150px; /* Fixed width for alignment */
+}
+
+.brand {
+  font-size: 18px; /* Smaller font size for brand */
+  font-weight: bold;
+  color: #000;
+  text-align: left; /* Align brand text to the left */
+  margin-left: 10px;
+}
+
+.arrow {
+  font-size: 24px; /* Smaller arrow */
+  color: #000;
+  font-weight: bold;
+  margin-left: auto; /* Pushes the arrow to the far right */
+  padding-right: 5px; /* Space on the right */
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) { /* Target iPad Pro and smaller devices */
+  .title {
+    font-size: 28px; /* Adjusted title size for iPad */
+  }
+
+  .letter {
+    font-size: 30px; /* Increased font size for letters on iPad */
+  }
+
+  .name, .brand {
+    font-size: 20px; /* Adjusted font size for name and brand */
+  }
+
+  .arrow {
+    font-size: 50px; /* Adjusted arrow size for iPad */
+  }
+}
+
+@media (max-width: 480px) { /* Target iPhone and smaller devices */
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 22px; /* Adjusted font size for iPhone */
+  }
+
+  .letter {
+    font-size: 24px; /* Adjusted font size for letters on iPhone */
+  }
+
+  .name, .brand {
+    font-size: 16px; /* Adjusted font size for name and brand */
+  }
+
+  .arrow {
+    font-size: 40px; /* Adjusted arrow size for iPhone */
+    padding-left: 5px; /* Reduced padding for iPhone */
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    margin-top: 80px;
+  }
+}

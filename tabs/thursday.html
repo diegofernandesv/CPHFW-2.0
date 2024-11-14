@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="../styles/stylesevents.css">
+</head>
+<body>
+
+    <div class="header-events">
+        <div id="events-title" class="events-title">
+            <h1>Events</h1>
+        </div>
+    
+        <div id="events-button" class="events-button">
+            <a href="your-schedule.html">
+                <button>My Schedule</button>
+            </a>
+        </div>
+       </div>
+
+    <nav class="navbar">
+        <a href="events.html" class="nav-item active" data-page="events.html">
+            <img src="../icons/add event.png" alt="Events Icon" class="icon">
+            <span class="label">EVENTS</span>
+        </a>
+        <a href="designers.html" class="nav-item" data-page="designers.html">
+            <img src="../icons/designer.png" alt="Designers Icon" class="icon">
+        </a>
+        <a href="map.html" class="nav-item" data-page="map.html">
+            <img src="../icons/map.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="guide.html" class="nav-item" data-page="guide.html">
+            <img src="../icons/local guide.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="profile.html" class="nav-item" data-page="profile.html">
+            <img src="../icons/profile.png" alt="Profile Icon" class="icon">
+        </a>
+    </nav>
+    <div class="content-container">
+        <nav class="weekdays">
+            <div class="day-item">
+                <a href="events.html" class="text">Tuesday</a>
+                <a href="events.html" class="numbers">5</a>
+            </div>
+        
+        
+            <div class="day-item " onclick="showInfo('tuesday')">
+                <a href="wednesday.html" class="text">Wednesday</a>
+                <a href="wednesday.html" class="numbers">6</a>
+            </div>
+
+            <div class="day-item2 active" onclick="showInfo('thursday')">
+                <div class="text2 active">Thursday</div>
+                <div class="numbers2 active" onclick="showInfo('thursday7')">7</div>
+            </div>
+        
+            <div class="day-item" onclick="showInfo('friday')">
+                <a href="friday.html" class="text">Friday</a>
+                <a href="friday.html" class="numbers">8</a>
+            </div>
+        
+            <div class="day-item" onclick="showInfo('saturday')">
+                <div class="text">Saturday</div>
+                <div class="numbers" onclick="showInfo('saturday9')">9</div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="filters">
+        <div id="timeline-button" class="timeline-button">
+            <a href="timeline.html">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                    <path d="M11.9996 10.5L2.39961 10.5M13.5996 3.83333L2.39961 3.83333M7.19961 7.16667L2.39961 7.16667" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>Timeline</button>
+            </a>
+        </div>
+    
+        <div id="type-button" class="type-button">
+            <a href="type.html">
+                <button>Type<svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" fill="none">
+                    <g clip-path="url(#clip0_11_3417)">
+                      <path d="M17.4198 2.45199L18.4798 3.51299L12.7028 9.29199C12.6102 9.38514 12.5001 9.45907 12.3789 9.50952C12.2576 9.55997 12.1276 9.58594 11.9963 9.58594C11.8649 9.58594 11.7349 9.55997 11.6137 9.50952C11.4924 9.45907 11.3823 9.38514 11.2898 9.29199L5.50977 3.51299L6.56977 2.45299L11.9948 7.87699L17.4198 2.45199Z" fill="white"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11_3417">
+                        <rect width="12" height="24" fill="white" transform="translate(24) rotate(90)"/>
+                      </clipPath>
+                    </defs>
+                  </svg></button>
+            </a>
+        </div>
+      </div>
+<div class="container-for-cards">
+    <div class="card-container">
+        <div class="card">
+            <img src="imagesevents/Images-event15.png" alt="Fashion Week Opening Reception" class="card-image">
+            <div class="card-content">
+                <div class="event-header">
+                    <p class="event-time">13:00-15:00</p>
+                    <button class="icon-button" onclick="addToCalendar()">
+                        <img src="imagesevents/Round Button.png" alt="Add to calendar">
+                    </button>
+                </div>
+                <h2 class="card-title">Fabric of the  
+                 <br> Future</h2>
+                <ul class="card-details">
+                    <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon"> Borgergade 91</li>
+                </ul>
+                <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+            </div>
+        </div>
+
+
+        <div class="card-container2">
+            <div class="card2">
+                <img src="imagesevents/Images-event16.png" alt="Rotate x Vogue Scandinavia Breakfast" class="card-image">
+                <div class="card-content2">
+                    <div class="event-header2">
+                        <p class="event-time2">20:00-23:00</p>
+                        <button class="icon-button2" onclick="addToCalendar()">
+                            <img src="imagesevents/Round Button.png" alt="Add to calendar">
+                        </button>
+                    </div>
+                    <h2 class="card-title2">The Garment x Mercedes-Benz Dinner<br> </h2>
+                    <ul class="card-details2">
+                        <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon"> Landemærket 14</li>
+                    </ul>
+                    <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-container3">
+            <div class="card3">
+                <img src="imagesevents/images-event17.png" alt="Fashion Week x TikTok Creator Hub" class="card-image3">
+                <div class="card-content3">
+                    <div class="event-header3">
+                        <p class="event-time3">19:30 - 23:45</p>
+                        <button class="icon-button3" onclick="addToCalendar()">
+                            <img src="imagesevents/Round Button.png" alt="Add to calendar" class="icon-button-image3">
+                        </button>
+                    </div>
+                    <h2 class="card-title3">Zalando Visionary <br>Award Dinner</h2>
+                    <ul class="card-details3">
+                        <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon3"> Sankt Anne 17 </li>
+                    </ul>
+                    <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container4">
+            <div class="card4">
+                <img src="imagesevents/images-event18.png" alt="Forza Collective Raleway" class="card-image4">
+                <div class="card-content4">
+                    <div class="event-header4">
+                        <p class="event-time4">18:00 - 23:00</p>
+                        <button class="icon-button4" onclick="addToCalendar()">
+                            <img src="imagesevents/Round Button.png" alt="Add to calendar" class="icon-button-image4">
+                        </button>
+                    </div>
+                    <h2 class="card-title4">Fashion Performance<br> of Our Shift</h2>
+                    <ul class="card-details4">
+                        <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon4"> Bertel Throvaldsens Plads 2</li>
+                    </ul>
+                    <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container5">
+            <div class="card5">
+                <img src="imagesevents/images-event19.png" alt="Anni Lu AW24 Club Mirage Collection" class="card-image5">
+                <div class="card-content5">
+                    <div class="event-header5">
+                        <p class="event-time5">14:00-15:00</p>
+                        <button class="icon-button5" onclick="addToCalendar()">
+                            <img src="imagesevents/Round Button.png" alt="Add to calendar" class="icon-button-image5">
+                        </button>
+                    </div>
+                    <h2 class="card-title5">TG Botanical  <br>Garden</h2>
+                    <ul class="card-details5">
+                        <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon5"> Borgergade 91</li>
+                    </ul>
+                    <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container6">
+            <div class="card6">
+                <img src="imagesevents/images-event20.png" alt="Fabric of the Future" class="card-image6">
+                <div class="card-content6">
+                    <div class="event-header6">
+                        <p class="event-time6">16:00-19:00</p>
+                        <button class="icon-button6" onclick="addToCalendar()">
+                            <img src="imagesevents/Round Button.png" alt="Add to calendar" class="icon-button-image6">
+                        </button>
+                    </div>
+                    <h2 class="card-title6">Vibskov's Chewing <br>Gum Therapy</h2>
+                    <ul class="card-details6">
+                        <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon6"> Landemærket 14</li>
+                    </ul>
+                    <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container7">
+            <div class="card7">
+                <img src="imagesevents/images-event21.png" alt="CPHFW x TikTok Creator Hub" class="card-image7">
+                <div class="card-content7">
+                    <div class="event-header7">
+                        <p class="event-time7">17:00-19:00</p>
+                        <button class="icon-button7" onclick="addToCalendar()">
+                            <img src="imagesevents/Round Button.png" alt="Add to calendar" class="icon-button-image7">
+                        </button>
+                    </div>
+                    <h2 class="card-title7">Lovechild 1979<br> Runaway</h2>
+                    <ul class="card-details7">
+                        <li><img src="imagesevents/location.png" alt="Location Icon" class="location-icon7"> Sankt Anne 17</li>
+                    </ul>
+                    <button class="card-button" onclick="window.location.href='error.html'">more info</button>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+</div>
+
+    <div id="events-container" class="events-container"></div>
+
+    <script src="navbar.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>

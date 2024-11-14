@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Week Opening</title>
+    <link rel="stylesheet" href="../styles/stylesmoreinfo.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="events.html" class="nav-item active" data-page="events.html">
+            <img src="../icons/add event.png" alt="Events Icon" class="icon">
+            <span class="label">EVENTS</span>
+        </a>
+        <a href="designers.html" class="nav-item" data-page="designers.html">
+            <img src="../icons/designer.png" alt="Designers Icon" class="icon">
+        </a>
+        <a href="map.html" class="nav-item" data-page="map.html">
+            <img src="../icons/map.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="guide.html" class="nav-item" data-page="guide.html">
+            <img src="../icons/local guide.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="profile.html" class="nav-item" data-page="profile.html">
+            <img src="../icons/profile.png" alt="Profile Icon" class="icon">
+        </a>
+    </nav>
+
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-button" id="backButton">
+            <img src="imagesevents/back button.png" alt="Back">
+        </button>
+        
+        <script>
+            document.getElementById("backButton").addEventListener("click", function() {
+                window.location.href = 'events.html';
+            });
+        </script>
+
+        <!-- Event Header Image -->
+        <div class="header-image">
+            <img src="imagesevents/Creator Hub.png" alt="Creator Hub">
+            <span class="header-label">OTHER EVENT</span>
+            <h1 class="event-title">Fashion x Tiktok</h1>
+            <h2 class="event-title2">Creator Hub</h2>
+        </div>
+
+        <!-- Event Details -->
+        <div class="event-details">
+            <div class="event-info-box">
+                <p class="event-info">
+                    <span>5 August</span> &bull;
+                    <span>14:00 - 20:00</span> &bull;
+                    <a href="#">Rådhuspladsen</a>
+                </p>
+            </div>
+
+            <div class="designer-info">
+                <p><strong>Designer:</strong> <a href="#">Alectra Rothschild</a></p>
+                <p><strong>Brand:</strong> GANNI</p>
+            </div>
+
+            <div class="about-event">
+                <h2>About event:</h2>
+                <p>Returning for the fourth time, the Copenhagen Fashion Week x TikTok Creator Hub will look to cultivate a core space in the centre of the city for the creative community of Copenhagen Fashion Week and TikTok to gather, connect and celebrate.</p>
+            </div>
+
+            <button class="schedule-button">Add to my schedule</button>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="navbar.js"></script>
+<script src="event.js"></script>
+</body>
+</html>

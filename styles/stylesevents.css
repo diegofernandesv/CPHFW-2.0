@@ -1,0 +1,700 @@
+@import url(navbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.header-events{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.events-button a{
+    text-decoration: none;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif; /* Removed fallback */
+    font-optical-sizing: auto;
+    font-weight: 700; /* Corrected font-weight */
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    font-family: Raleway, sans-serif;
+}
+
+/* Weekdays container */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 15px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.events-title {
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Each day and number pair */
+.day-item {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.day-item:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the text (days of the week) */
+.text {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Styling for the numbers */
+.numbers {
+    margin-top: -10px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Styling for the numbers (duplicate removed) */
+.numbers1 {
+    margin-top: -10px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.weekdays,
+.weekdays1,
+.weekdays2,
+.weekdays3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* Information display area */
+.events-title h1 {
+    font-family: "Raleway", serif;
+    font-size: 36px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Active State Styling */
+.day-item.active,
+.day-item1.active,
+.day-item2.active,
+.day-item3.active,
+.day-item4.active {
+    background-color: #000000;
+    color: white;
+    aspect-ratio: 5;
+    border-radius: 15px;
+    padding-top: 8px;
+    transition: all 0.2s ease-in-out;
+    width: auto;
+    height: auto;
+}
+
+.day-item.active3 {
+  padding-left:64px;
+  padding-right: 64px;
+}
+
+
+/* Text Styles */
+.text,
+.text1,
+.text2,
+.text3,
+.text4 {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.text.active,
+.text1.active,
+.text2.active,
+.text3.active,
+.text4.active {
+    color: white;
+}
+
+/* Number Styles */
+.numbers,
+.numbers1,
+.numbers2,
+.numbers3,
+.numbers4 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-top: -10px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.numbers.active,
+.numbers1.active,
+.numbers2.active,
+.numbers3.active,
+.numbers4.active {
+    color: white;
+}
+
+/* Adjustments for Specific Elements */
+.numbers2 {
+    margin-top: -8px; /* Adjusted margin for consistency */
+}
+
+.numbers3 {
+    margin-top: -8px; /* Adjusted margin for consistency */
+}
+
+/* Flex Containers */
+.weekdays,
+.weekdays2,
+.weekdays3,
+.weekdays4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+/* Individual Day Item Styling */
+.day-item,
+.day-item1,
+.day-item2,
+.day-item3,
+.day-item4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4;
+    border-radius: 15px;
+    padding: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Specific Text and Number Styling for Each Item */
+.text1,
+.text2,
+.text3,
+.text4 {
+    font-size: 9px;
+}
+
+.numbers2,
+.numbers3,
+.numbers4 {
+    font-size: 40px;
+}
+
+/* Hover Effect */
+.day-item:hover,
+.day-item1:hover,
+.day-item2:hover,
+.day-item3:hover,
+.day-item4:hover {
+    transform: scale(1.05);
+    background-color: #dadada;
+    color: white;
+}
+
+.events-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--Orange, #F95F19);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 98px;
+    height: 28px;
+}
+
+.events-button button a{
+    text-decoration: none;
+}
+
+
+
+/* For iPad in portrait mode and other larger screens */
+
+
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0;
+    margin: 8px 16px;
+    gap: 8px;
+    border-bottom: #dadada solid;
+    border-top: #dadada solid;
+    text-decoration: none;
+}
+
+.timeline-button button, .type-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 8px; 
+    border-radius: 12px;
+    background-color: var(--Gray, #6E6E6E);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 116px;
+    height: 32px;
+  }
+  
+  .timeline-button svg, .type-button svg {
+    width: 16px; /* Adjust icon size if needed */
+    height: auto;
+
+  }
+
+  .timeline-button a, .type-button a {
+    text-decoration: none; /* Remove underline from the anchor tag */
+  }
+
+/*-------------------------------------------- CARD 1--------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.card-container,
+.card-container2,
+.card-container3,
+.card-container4,
+.card-container5,
+.card-container6,
+.card-container7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.container-for-cards{
+    margin-bottom: 100px;
+}
+
+
+.card,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7 {
+    position: relative;
+    width: 361px;
+    height: 214px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-image,
+.card-image2,
+.card-image3,
+.card-image4,
+.card-image5,
+.card-image6,
+.card-image7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1; /* Ensure it is lower than the content */
+}
+
+.card-content,
+.card-content2,
+.card-content3,
+.card-content4,
+.card-content5,
+.card-content6,
+.card-content7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2; /* Ensure it is higher than the image */
+}
+
+.card-content,
+.card-content4,
+.card-content5,
+.card-content6,
+.card-content7 {
+    color: white;
+}
+
+.card-content2 {
+    color: #ffffff;
+}
+
+.card-content3 {
+    color: #ffffff; /* Example color for the third card */
+}
+
+.event-header,
+.event-header2,
+.event-header3,
+.event-header4,
+.event-header5,
+.event-header6,
+.event-header7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-time,
+.event-time2,
+.event-time3,
+.event-time4,
+.event-time5,
+.event-time6,
+.event-time7 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon-button,
+.icon-button2,
+.icon-button3,
+.icon-button4,
+.icon-button5,
+.icon-button6,
+.icon-button7 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+.icon-button img,
+.icon-button2 img,
+.icon-button3 img,
+.icon-button4 img,
+.icon-button5 img,
+.icon-button6 img,
+.icon-button7 img {
+    width: 40px;
+    height: 40px;
+    margin-left: -14px;
+}
+
+.card-title,
+.card-title2,
+.card-title3,
+.card-title4,
+.card-title5,
+.card-title6,
+.card-title7 {
+    font-size: 18px;
+    margin: 74px 0px 10px;
+    text-align: left;
+}
+
+.card-description,
+.card-description2,
+.card-description3,
+.card-description4,
+.card-description5,
+.card-description6,
+.card-description7 {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.card-details,
+.card-details2,
+.card-details3,
+.card-details4,
+.card-details5,
+.card-details6,
+.card-details7 {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.card-button,
+.card-button2,
+.card-button3,
+.card-button4,
+.card-button5,
+.card-button6,
+.card-button7 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    text-decoration: none;
+    font-family: "Raleway", serif;
+    width: 78px;
+    height: 24px;
+    margin-left: 242px;
+    margin-top: -30px;
+}
+
+.card-button:hover,
+.card-button2:hover,
+.card-button3:hover,
+.card-button4:hover,
+.card-button5:hover,
+.card-button6:hover,
+.card-button7:hover {
+    background-color: #ddd;
+}
+
+.location-icon,
+.location-icon2,
+.location-icon3,
+.location-icon4,
+.location-icon5,
+.location-icon6,
+.location-icon7 {
+    width: 16px;
+    height: 20px;
+}
+
+.card-details li,
+.card-details2 li,
+.card-details3 li,
+.card-details4 li,
+.card-details5 li,
+.card-details6 li,
+.card-details7 li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.event-time,
+.event-time2,
+.event-time3,
+.event-time4,
+.event-time5,
+.event-time6,
+.event-time7 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* General adjustments for iPad and larger screens */
+
+
+
+/* For iPad in portrait mode */
+/* For iPad in portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-events{
+        margin-top: 120px;
+        gap: 380px;
+    }
+
+    .event-time,
+.event-time2,
+.event-time3,
+.event-time4,
+.event-time5,
+.event-time6,
+.event-time7 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    scale: 150%;
+    margin-left: 40px;
+}
+
+.icon-button,
+.icon-button2,
+.icon-button3,
+.icon-button4,
+.icon-button5,
+.icon-button6,
+.icon-button7 {
+    scale: 150%;
+    margin-right: 20px;
+}
+.location-icon,
+.location-icon2,
+.location-icon3,
+.location-icon4,
+.location-icon5,
+.location-icon6,
+.location-icon7 {
+    scale:120%;
+    margin-left: 10px;
+}
+
+.card-details li,
+.card-details2 li,
+.card-details3 li,
+.card-details4 li,
+.card-details5 li,
+.card-details6 li,
+.card-details7 li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    scale: 150%;
+    margin-left: 100px;
+}
+
+
+.weekdays{
+    scale:169%;
+    margin: 48px 0;
+}
+
+    .icon-button,
+    .icon-button2,
+    .icon-button3,
+    .icon-button4,
+    .icon-button5,
+    .icon-button6,
+    .icon-button7 {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+    }
+
+    .timeline-button button{
+        margin-left: 140px;
+    }
+    .card, .card2, .card3, .card4, .card5, .card6, .card7 {
+        width: 600px;
+        height: 350px;
+    }
+    .card-title, .card-title2, .card-title3, .card-title4, .card-title5, .card-title6, .card-title7 {
+        font-size: 40px;
+        margin: 90px 0 14px;
+    }
+    .card-description, .card-description2, .card-description3, .card-description4, .card-description5, .card-description6, .card-description7 {
+        font-size: 24px;
+    }
+    .event-time, .event-time2, .event-time3, .event-time4, .event-time5, .event-time6, .event-time7 {
+        font-size: 18px;
+    }
+    .card-button, .card-button2, .card-button3, .card-button4, .card-button5, .card-button6, .card-button7 {
+        width: 200px;
+        height: 34px;
+        font-size: 20px;
+        margin-left: 340px;
+    }
+
+    .icon-button2,.icon-button3,.icon-button4, .icon-button5,.icon-button6,.icon-button7 {
+        width: 200%;
+        height: 200%;
+    }
+
+
+
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1025px) {
+    .header-events{
+        margin-top: 120px;
+    }
+    .card, .card2, .card3, .card4, .card5, .card6, .card7 {
+        width: 500px;
+        height: 300px;
+    }
+    .card-title, .card-title2, .card-title3, .card-title4, .card-title5, .card-title6, .card-title7 {
+        font-size: 22px;
+        margin: 90px 0 14px;
+    }
+    .card-description, .card-description2, .card-description3, .card-description4, .card-description5, .card-description6, .card-description7 {
+        font-size: 18px;
+    }
+    .event-time, .event-time2, .event-time3, .event-time4, .event-time5, .event-time6, .event-time7 {
+        font-size: 18px;
+    }
+    .card-button, .card-button2, .card-button3, .card-button4, .card-button5, .card-button6, .card-button7 {
+        width: 100px;
+        height: 34px;
+        font-size: 16px;
+    }
+}

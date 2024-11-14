@@ -1,0 +1,184 @@
+[
+    {
+        "time": "09:00 - 10:00",
+        "title": "Fashion Week Opening Reception",
+        "location": "Rådhuspladsen",
+        "button_text": "more info",
+        "image": "imagesevents/Images-event1.png"
+    },
+    {
+        "time": "09:00 - 11:00",
+        "title": "Rotate x Vogue Scandinavia Breakfast",
+        "location": "Rådhuspladsen",
+        "button_text": "more info",
+        "image": "images/images-event2.png"
+    },
+    {
+        "time": "14:00 - 20:00",
+        "title": "Fashion Week x TikTok Creator Hub",
+        "location": "Læderstræde 1-8",
+        "button_text": "more info",
+        "image": "images/images-event3.png"
+    },
+    {
+        "time": "20:30 - 21:30",
+        "title": "Forza Collective Raleway",
+        "location": "Store House",
+        "button_text": "more info",
+        "image": "images/images-event4.png"
+    },
+    {
+        "time": "09:00 - 16:00",
+        "title": "Anni Lu AW24 Club Mirage Collection",
+        "location": "Rådhusstræde",
+        "button_text": "more info",
+        "image": "images/images-event5.png"
+    },
+    {
+        "time": "13:00 - 15:00",
+        "title": "Fabric of the Future",
+        "location": "Østbanegade",
+        "button_text": "more info",
+        "image": "images/images-event6.png"
+    },
+    {
+        "time": "16:00 - 17:00",
+        "title": "CPHFW x TikTok Creator Hub",
+        "location": "Læderstræde",
+        "button_text": "more info",
+        "image": "images/images-event7.png"
+    },
+    {
+        "time": "20:00 - 23:00",
+        "title": "The Garment x Mercedes-Benz Dinner",
+        "location": "Amagertorv",
+        "button_text": "more info",
+        "image": "URL_for_background_image_8"
+    },
+    {
+        "time": "10:00 - 12:00",
+        "title": "Kristxander SS25",
+        "location": "Borgergade",
+        "button_text": "more info",
+        "image": "URL_for_background_image_9"
+    },
+    {
+        "time": "11:00 - 13:00",
+        "title": "Marrimekko",
+        "location": "Thorvaldsensgade",
+        "button_text": "more info",
+        "image": "URL_for_background_image_10"
+    },
+    {
+        "time": "14:00 - 15:00",
+        "title": "Scandinavian Academy of Fashion & Design",
+        "location": "Kongensgade",
+        "button_text": "more info",
+        "image": "URL_for_background_image_11"
+    },
+    {
+        "time": "18:00 - 23:00",
+        "title": "Fashion Performance of Our Shift",
+        "location": "Ryvangs Allé",
+        "button_text": "more info",
+        "image": "URL_for_background_image_12"
+    },
+    {
+        "time": "08:00 - 18:00",
+        "title": "Anni Lu AW24 Club Mirage Collection",
+        "location": "Sunny Tree",
+        "button_text": "more info",
+        "image": "URL_for_background_image_13"
+    },
+    {
+        "time": "08:00 - 18:00",
+        "title": "Cengiz Güdücü Presentation",
+        "location": "Store Rådhuspladsen",
+        "button_text": "more info",
+        "image": "URL_for_background_image_14"
+    },
+    {
+        "time": "09:00 - 10:00",
+        "title": "CPHFW NewTalent Showroom",
+        "location": "Læderstræde",
+        "button_text": "more info",
+        "image": "URL_for_background_image_15"
+    },
+    {
+        "time": "16:00 - 18:00",
+        "title": "Vibskov's Chewing Gum Therapy",
+        "location": "Gammel Mønt",
+        "button_text": "more info",
+        "image": "URL_for_background_image_16"
+    },
+    {
+        "time": "20:00 - 23:00",
+        "title": "Zalando Visionary Award Dinner",
+        "location": "Amagertorv",
+        "button_text": "more info",
+        "image": "URL_for_background_image_17"
+    },
+    {
+        "time": "10:00 - 11:30",
+        "title": "Deadwood and Helmstedt",
+        "location": "Central CPH",
+        "button_text": "more info",
+        "image": "URL_for_background_image_18"
+    },
+    {
+        "time": "18:00 - 20:30",
+        "title": "Han Kjøbenhavn Showroom",
+        "location": "Central CPH",
+        "button_text": "more info",
+        "image": "URL_for_background_image_19"
+    },
+    {
+        "time": "10:00 - 15:00",
+        "title": "SS25 CPHFW x TikTok Creator Hub",
+        "location": "Læderstræde",
+        "button_text": "more info",
+        "image": "URL_for_background_image_20"
+    },
+    {
+        "time": "15:00 - 16:00",
+        "title": "Live Studio",
+        "location": "Vognmagergade",
+        "button_text": "more info",
+        "image": "URL_for_background_image_21"
+    },
+    {
+        "time": "14:00 - 15:00",
+        "title": "TG Botanical Garden",
+        "location": "Østbanegade 66",
+        "button_text": "more info",
+        "image": "URL_for_background_image_22"
+    },
+    {
+        "time": "17:00 - 18:30",
+        "title": "Lovechild 1979 Runway",
+        "location": "Læderstræde",
+        "button_text": "more info",
+        "image": "URL_for_background_image_23"
+    },
+    {
+        "time": "16:00 - 16:30",
+        "title": "Runway Wood Wood",
+        "location": "Gammel Mønt",
+        "button_text": "more info",
+        "image": "URL_for_background_image_24"
+    },
+    {
+        "time": "18:00 - 19:00",
+        "title": "Henrik Vibskov Runway",
+        "location": "Læderstræde",
+        "button_text": "more info",
+        "image": "URL_for_background_image_25"
+    },
+    {
+        "time": "10:00 - 15:00",
+        "title": "OperaSport Skall Studio",
+        "location": "Borgergade",
+        "button_text": "more info",
+        "image": "URL_for_background_image_26"
+    }
+]

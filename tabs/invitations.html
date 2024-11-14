@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitation Page</title>
+    <link rel="stylesheet" href="../styles/invitations.css" />
+  </head>
+  <body class="invitations-body">
+    <div class="header-invitations">
+      <button class="back-button" onclick="goBackToProfile()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="29"
+          height="58"
+          viewBox="0 0 29 58"
+          fill="none"
+        >
+          <path
+            d="M23.0744 42.0983L20.5103 44.66L6.54436 30.6989C6.31924 30.4752 6.14058 30.2092 6.01866 29.9162C5.89675 29.6232 5.83398 29.3089 5.83398 28.9915C5.83398 28.6742 5.89675 28.3599 6.01866 28.0669C6.14058 27.7739 6.31924 27.5079 6.54436 27.2842L20.5103 13.3158L23.072 15.8775L9.96395 28.9879L23.0744 42.0983Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+      <h1>Invitations</h1>
+      <button class="share-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+        <path d="M21.9598 18.477C21.9584 19.0311 21.8419 19.5788 21.6178 20.0855C21.3936 20.5922 21.0666 21.0468 20.6575 21.4205C20.2484 21.7942 19.7662 22.0788 19.2413 22.2563C18.7164 22.4338 18.1604 22.5004 17.6085 22.4517C17.0566 22.403 16.5208 22.2402 16.0351 21.9736C15.5493 21.707 15.1243 21.3424 14.7869 20.9029C14.4495 20.4634 14.2071 19.9586 14.0751 19.4205C13.943 18.8824 13.9242 18.3228 14.0198 17.777L9.11977 15.557C8.74534 16.0216 8.27171 16.3965 7.73358 16.6544C7.19545 16.9122 6.60646 17.0463 6.00977 17.047C4.9489 17.047 3.93148 16.6256 3.18134 15.8754C2.43119 15.1253 2.00977 14.1079 2.00977 13.047C2.00977 11.9861 2.43119 10.9687 3.18134 10.2186C3.93148 9.46843 4.9489 9.047 6.00977 9.047C6.55823 9.04876 7.10048 9.16331 7.60281 9.3835C8.10513 9.6037 8.55681 9.92485 8.92977 10.327L14.0898 7.527C13.9997 7.20142 13.956 6.86478 13.9598 6.527C13.9587 5.59636 14.2822 4.69449 14.8746 3.97669C15.4669 3.25889 16.291 2.77008 17.2049 2.59445C18.1188 2.41881 19.0653 2.56734 19.8815 3.01446C20.6977 3.46158 21.3325 4.1793 21.6765 5.04402C22.0205 5.90875 22.0522 6.86636 21.7662 7.75195C21.4801 8.63755 20.8943 9.39569 20.1094 9.89583C19.3246 10.396 18.39 10.6068 17.4664 10.492C16.5429 10.3772 15.6883 9.94404 15.0498 9.267L9.88977 12.077C9.97977 12.4043 10.0231 12.7377 10.0198 13.077C10.0203 13.3116 10.0003 13.5459 9.95977 13.777L14.8598 15.997C15.378 15.3457 16.0864 14.8723 16.8864 14.6427C17.6864 14.4131 18.5381 14.4387 19.3228 14.7161C20.1075 14.9934 20.7862 15.5087 21.2642 16.19C21.7423 16.8713 21.9959 17.6847 21.9898 18.517L21.9598 18.477Z" fill="white"/>
+      </svg></button>
+    </div>
+
+    <div class="invitation-card">
+      <div class="ticket-head">
+        <img
+          src="imagesevents/invitationcard.png"
+          alt="Event Image"
+          class="event-image"
+        />
+      </div>
+      <div class="ticket-body">
+        <h2>Rotate x Vogue Scandinavia Breakfast</h2>
+        <div class="event-info">
+          <div class="info-pair">
+            <p class="label">Location</p>
+            <p class="info">Rotate Kristen</p>
+          </div>
+          <div class="info-pair">
+            <p class="label">Seat</p>
+            <p class="info">No Seat</p>
+          </div>
+        </div>
+        <div class="event-info">
+          <div class="info-pair">
+            <p class="label">Date</p>
+            <p class="info">05 August, 2025</p>
+          </div>
+          <div class="info-pair">
+            <p class="label">Time</p>
+            <p class="info">09:00-11:00</p>
+          </div>
+        </div>
+        <div class="passenger-info">
+          <p class="label">Person’s Name:</p>
+          <h4>Mathias Nilsen</h4>
+        </div>
+      </div>
+      <div class="barcode-section">
+        <p>Scan this barcode</p>
+        <img src="imagesevents/barcode1.png" alt="Barcode" class="barcode" />
+        <p class="barcode-text">CPHFW25 Spring Summer</p>
+      </div>
+    </div>
+      </div>
+      
+    <button class="download-button">Download image</button>
+
+    <script src="profilerelated.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(navbar.css);
+
+/* styles.css */
+
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images2/Copenhagen.png'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-size: 74px; /* Change font size to 64px */
+    color: #F26329; /* Orange color for the title */
+    margin-bottom: 10px;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; /* Make the font italic */
+    font-weight: lighter;
+    position: absolute;
+    top: 20px; /* Adjust the value as needed */
+    width: 100%;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 105px auto 0 auto; /* Add top margin to create space from the title */
+    line-height: 1.5;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 30px 0; /* Decrease padding to make the carousel smaller */
+    position: absolute;
+    bottom: 20px; /* Position carousel 20px above the bottom */
+    scrollbar-width: none; /* For Firefox */
+    padding-bottom: 50px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.carousel-item {
+    min-width: 200px; /* Decrease the size of the carousel items */
+    margin: 0 10px; /* Decrease the margin between items */
+    flex: 0 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+}
+
+.carousel-item p {
+    margin: 0;
+    font-size: 1.5rem; /* Make the text smaller */
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9); /* Gray background */
+    padding: 5px 10px; /* Padding for button-like appearance */
+    border-radius: 12px; /* Rounded corners */
+    position: absolute;
+    top: 10px; /* Position text at the top of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure text is above the image */
+    font-family:"Instrument Serif", serif; ;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 10px; /* Change bottom space to 10px */
+    left: 50%;
+    transform: translateX(-50%);
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 12px; /* Set border radius to 12px */
+    padding: 0; /* Remove padding */
+    width: 168px; /* Set width to 168px */
+    height: 228px; /* Set height to 228px */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensure the image covers the button */
+}
+
+.button img {
+    width: 100%; /* Make image cover the full button */
+    height: 100%; /* Make image cover the full button */
+    object-fit: cover; /* Ensure the image covers the button without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button p {
+    color: black; /* Change text color to black */
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px; /* Position text at the top of the button */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 1; /* Ensure text is above the image */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .title{
+        margin-top: 60px;
+        font-size: 128px;
+        margin-bottom: 60px;
+    }
+
+    .description{
+        margin-top: 220px;
+    }
+
+    .carousel-item img {
+        scale: 120%;
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+    }
+}

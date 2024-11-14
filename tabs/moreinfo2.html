@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Week Opening</title>
+    <link rel="stylesheet" href="../styles/stylesmoreinfo.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="events.html" class="nav-item active" data-page="events.html">
+            <img src="../icons/add event.png" alt="Events Icon" class="icon">
+            <span class="label">EVENTS</span>
+        </a>
+        <a href="designers.html" class="nav-item" data-page="designers.html">
+            <img src="../icons/designer.png" alt="Designers Icon" class="icon">
+        </a>
+        <a href="map.html" class="nav-item" data-page="map.html">
+            <img src="../icons/map.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="guide.html" class="nav-item" data-page="guide.html">
+            <img src="../icons/local guide.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="profile.html" class="nav-item" data-page="profile.html">
+            <img src="../icons/profile.png" alt="Profile Icon" class="icon">
+        </a>
+    </nav>
+
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-button" id="backButton">
+            <img src="imagesevents/back button.png" alt="Back">
+        </button>
+        
+        <script>
+            document.getElementById("backButton").addEventListener("click", function() {
+                window.location.href = 'events.html';
+            });
+        </script>
+
+        <!-- Event Header Image -->
+        <div class="header-image">
+            <img src="imagesevents/rotatexvogue.png" alt="Forza Collective Fashion Show">
+            <span class="header-label">OTHER EVENT</span>
+            <h1 class="event-title">Rotate x Vogue</h1>
+            <h2 class="event-title3">Scandinavia Breakfast</h2>
+        </div>
+
+        <!-- Event Details -->
+        <div class="event-details">
+            <div class="event-info-box">
+                <p class="event-info">
+                    <span>5 August</span> &bull;
+                    <span>09:00 - 11:00</span> &bull;
+                    <a href="#">Rådhuspladsen</a>
+                </p>
+            </div>
+
+            <div class="designer-info">
+                <p><strong>Designer:</strong> <a href="#">Alectra Rothschild</a></p>
+                <p><strong>Brand:</strong> GANNI</p>
+            </div>
+
+            <div class="about-event">
+                <h2>About event:</h2>
+                <p>Start your morning at CPHFWwith a stylish breakfast hosted by Rotate and Vogue Scandinavia. Enjoy Nordic bites, exclusive previews, and inspiring talks on the latest in Scandinavian fashion and sustainability.</p>
+            </div>
+
+            <button class="schedule-button">Add to my schedule</button>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="navbar.js"></script>
+<script src="event.js"></script>
+</body>
+</html>

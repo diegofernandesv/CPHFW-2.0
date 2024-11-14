@@ -1,0 +1,183 @@
+/* General reset */
+* {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav bar */
+body {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 9999;
+}
+
+/* Remove underline from links inside nav-item */
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.5s ease, font-weight 0.5s ease;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+/* Label background color transition */
+.nav-item.active .label,
+.nav-item:hover .label {
+    background-color: #3C3C3C;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    transition: background-color 0.5s ease, padding 0.3s ease, margin-left 0.3s ease;
+}
+
+/* Smooth transition for icon container */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover .icon-container {
+    background-color: #444;
+}
+
+/* Label styling */
+.label {
+    font-size: 12px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, display 0s linear 0.5s; /* Added smooth opacity change */
+    font-weight: bold;
+}
+
+.nav-item.active .label,
+.nav-item:hover .label {
+    display: inline-block;
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .navbar {
+        position: fixed;
+        bottom: auto;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        padding: 15px 20px;
+        color:white;
+    }
+
+    .icon-container {
+        width: 48px;
+        height: 48px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .label {
+        display: inline-block;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        justify-content: space-around;
+        padding: 10px 0;
+        top: 0;
+        height: 70px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+    }
+
+    .icon-container {
+        width: 56px;
+        height: 56px;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .icon-container {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .label {
+        display: none;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../styles/styleprofile.css">
+  </head>
+  <body>
+    <div class="profile_page">
+      <!-- Header Section -->
+      <div class="header-profile">
+        <h1>Hi, Mathias!</h1>
+      </div>
+      <p class="header_paragraph">
+        We are happy to see you at CPHFW 25 Spring Summer, here you can find all
+        important information related to fashion week.
+      </p>
+
+      <nav class="navbar">
+        <a href="events.html" class="nav-item" data-page="events.html">
+            <img src="../icons/add event.png" alt="Events Icon" class="icon">
+            <span class="label">EVENTS</span>
+        </a>
+        <a href="designers.html" class="nav-item" data-page="designers.html">
+            <img src="../icons/designer.png" alt="Designers Icon" class="icon">
+        </a>
+        <a href="map.html" class="nav-item" data-page="map.html">
+            <img src="../icons/map.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="guide.html" class="nav-item" data-page="guide.html">
+            <img src="../icons/local guide.png" alt="Map Icon" class="icon">
+        </a>
+        <a href="profile.html" class="nav-item active" data-page="profile.html">
+            <img src="../icons/profile.png" alt="Profile Icon" class="icon">
+            <span class="label">PROFILE</span>
+        </a>
+      </nav>
+
+      <!-- Main Buttons Section -->
+      <div class="main_buttons">
+        <div class="button" onclick="goToInvitations()">
+          <img src="imagesevents/invitations-profile.png" alt="Invitations" />
+          <p>Invitations</p>
+        </div>
+        <div class="button" onclick="goTomySchedule()">
+          <img src="imagesevents/myschedule-Profile.png" alt="My Schedule" />
+          <p>My Schedule</p>
+        </div>
+        <div class="button" onclick="goToOutfits()">
+          <img src="imagesevents/outfits-profile.png" alt="Inspiration Outfits" />
+          <p>Inspiration Outfits</p>
+        </div>
+        <div class="button" onclick="goToSupport()">
+          <img src="imagesevents/support-profile.png" alt="Support" />
+          <p>Support</p>
+        </div>
+      </div>
+
+      <!-- Settings Section -->
+      <div class="settings_buttons">
+        <button onclick="showLanguageOptions()">
+          Language<span class="arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="22"
+              viewBox="0 0 12 22"
+              fill="none"
+            >
+              <path
+                d="M-2.21511e-07 2.21627L1.78471 0.500001L11.5055 9.85366C11.6622 10.0035 11.7866 10.1818 11.8715 10.3781C11.9563 10.5744 12 10.7849 12 10.9976C12 11.2102 11.9563 11.4207 11.8715 11.6171C11.7866 11.8134 11.6622 11.9916 11.5055 12.1415L1.7847 21.5L0.00168052 19.7837L9.12538 11L-2.21511e-07 2.21627Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </button>
+
+        <button onclick="goToSettings()">
+          Setting<span class="arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="22"
+              viewBox="0 0 12 22"
+              fill="none"
+            >
+              <path
+                d="M-2.21511e-07 2.21627L1.78471 0.500001L11.5055 9.85366C11.6622 10.0035 11.7866 10.1818 11.8715 10.3781C11.9563 10.5744 12 10.7849 12 10.9976C12 11.2102 11.9563 11.4207 11.8715 11.6171C11.7866 11.8134 11.6622 11.9916 11.5055 12.1415L1.7847 21.5L0.00168052 19.7837L9.12538 11L-2.21511e-07 2.21627Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <!-- Popup Modal for Language Selection -->
+      <div id="languageModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeLanguageOptions()">&times;</span>
+          <h2>Select Language</h2>
+          <button class="language-button" onclick="setLanguage('English')">
+            English
+          </button>
+          <button class="language-button" onclick="window.location.href='error.html'">Danish</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="profilerelated.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

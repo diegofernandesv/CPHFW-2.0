@@ -1,0 +1,375 @@
+@import url(navbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Weekdays container */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.events-title {
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 60px;
+}
+
+/* Each day and number pair */
+.day-item {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.day-item:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the text (days of the week) */
+.text {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Styling for the numbers */
+.numbers {
+    margin-top: -10px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Styling for the numbers (duplicate removed) */
+.numbers1 {
+    margin-top: -10px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.weekdays,
+.weekdays1,
+.weekdays2,
+.weekdays3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+/* Information display area */
+.events-title h1 {
+    font-family: "Raleway", serif;
+    margin-left: 16px;
+    margin-right: 360px;
+    font-size: 36px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Active State Styling */
+.day-item.active,
+.day-item1.active,
+.day-item2.active,
+.day-item3.active,
+.day-item4.active {
+    background-color: #000000;
+    color: white;
+    aspect-ratio: 5;
+    border-radius: 15px;
+    padding-top: 8px;
+    transition: all 0.2s ease-in-out;
+    width: auto;
+    height: auto;
+}
+
+.day-item.active3 {
+  padding-left:64px;
+  padding-right: 64px;
+}
+
+
+/* Text Styles */
+.text,
+.text1,
+.text2,
+.text3,
+.text4 {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.text.active,
+.text1.active,
+.text2.active,
+.text3.active,
+.text4.active {
+    color: white;
+}
+
+/* Number Styles */
+.numbers,
+.numbers1,
+.numbers2,
+.numbers3,
+.numbers4 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-top: -10px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.numbers.active,
+.numbers1.active,
+.numbers2.active,
+.numbers3.active,
+.numbers4.active {
+    color: white;
+}
+
+/* Adjustments for Specific Elements */
+.numbers2 {
+    margin-top: -8px; /* Adjusted margin for consistency */
+}
+
+.numbers3 {
+    margin-top: -8px; /* Adjusted margin for consistency */
+}
+
+/* Flex Containers */
+.weekdays,
+.weekdays2,
+.weekdays3,
+.weekdays4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 10px 0;
+}
+
+/* Individual Day Item Styling */
+.day-item,
+.day-item1,
+.day-item2,
+.day-item3,
+.day-item4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4;
+    border-radius: 15px;
+    padding: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Specific Text and Number Styling for Each Item */
+.text1,
+.text2,
+.text3,
+.text4 {
+    font-size: 9px;
+}
+
+.numbers2,
+.numbers3,
+.numbers4 {
+    font-size: 40px;
+}
+.events-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--Orange, #F95F19);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 98px;
+    height: 24px;
+    margin-left: 255px;
+    margin-top: -30px;
+    margin-right: 64px;
+}
+
+.events-button button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 12px;
+    cursor: inherit;
+}
+
+/* General container style */
+.raleway {
+    font-family: "Raleway", sans-serif; /* Removed fallback */
+    font-optical-sizing: auto;
+    font-weight: 700; /* Corrected font-weight */
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.schedule-header h1 {
+    font-family: "Raleway", sans-serif;
+    margin-left: 16px;
+    margin-top: 56px;
+    margin-bottom: 20px;
+    
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    background-color: #1A1A1A; /* Dark background */
+    color: #FFFFFF; /* White text color */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    margin-bottom: 14px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    font-family:"Raleway", sans-serif ;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* Styling for the event image */
+.event-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+/* Styling for the event details */
+.event-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-time {
+    color: #FFA500; /* Orange color for time */
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px; /* Space between title and location */
+}
+
+.event-location {
+    font-size: 14px;
+    color: #CCCCCC; /* Light grey for location text */
+    margin: 0;
+}
+
+/* Delete button styling */
+.delete-button {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    scale: 120%;
+}
+
+/* Back button styling */
+.back-button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: inline-block;
+    font-family:"Raleway", sans-serif; 
+    border-radius: 50px;
+    margin-left: 16px;
+}
+
+.header-schedule {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 132px;
+  }
+  
+  .header-schedule h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    color: #000000;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+.header-schedule1 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    margin: 16px;
+    margin-top: 24px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .schedule-header {
+        margin-top: 120px;
+    }
+}

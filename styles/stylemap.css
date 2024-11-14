@@ -1,0 +1,83 @@
+@import url(navbar.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the map */
+  #map-container {
+    height: 80vh; /* 80% of the screen height */
+    width: 100%;
+  }
+  
+  /* Container for buttons */
+  #section-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh; /* 20% of the screen height */
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  /* Button container inside the background */
+  .section-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-left: 16px;
+    display: flex; /* Arrange buttons horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of buttons */
+  }
+  
+  /* Individual button styles */
+  .section-button {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 8px 16px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Keep text in a single line */
+  }
+  
+  .section-button:hover {
+    background-color: #1f1f1f;
+  }
+  
+  @media (min-width: 768px) {
+    /* Stack buttons vertically on smaller screens */
+    #section-buttons-container {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+    }
+
+    .section-buttons {
+        flex-direction: row; /* Stack buttons */
+        align-items: center;
+        margin-left: 0; /* Center buttons */
+        gap: 12px; /* Increase gap for vertical layout */
+    }
+
+    .section-button {
+        padding: 10px 20px; /* Larger padding for touch devices */
+        font-size: 16px; /* Increase font size for readability */
+    }
+}
+@media (min-width: 480px) {
+    .section-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100%; /* Full-width for each button */
+        justify-content: center; /* Center text */
+    }
+}

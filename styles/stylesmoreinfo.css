@@ -1,0 +1,306 @@
+@import url(navbar.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif; /* Reemplazado Arial */
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%; /* Cambiado a 100% para ajustarse mejor en pantallas pequeñas */
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    left: 36px;
+}
+
+.header-image img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.header-label {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 12px;
+    color: white;
+    background: black;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    
+    
+}
+
+/* Event Title */
+.event-title {
+    margin-top: -30px;
+    font-size: 84px;
+    color: #f26a0a;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    z-index: 1;
+    text-align: center;
+}
+.event-title2 {
+    margin-top: -50px;
+    font-size: 64px;
+    color: #f26a0a;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    z-index: 1;
+    text-align: center;
+}
+.event-title3 {
+    margin-top: -30px;
+    font-size: 30px;
+    color: #f26a0a;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+/* Event Details */
+.event-details {
+    background-color: white;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+/* Event Info Box */
+.event-info-box {
+    background-color: #272524;
+    padding: 10px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 100%;
+}
+
+.event-info {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.event-info a {
+    color: #f26a0a;
+    text-decoration: none;
+}
+
+/* Designer Info */
+.designer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.designer-info p {
+    font-size: 14px;
+    color: #000;
+}
+
+/* About Event Section */
+.about-event h2 {
+    font-size: 24px;
+    margin: 16px 0 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.about-event p {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* Schedule Button */
+.schedule-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .header-image img {
+        width: 834px;
+        height: 607px;
+    }
+
+    .event-title {
+        font-size: 60px;
+        margin-top: -20px;
+    }
+
+    .event-details {
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .schedule-button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+        padding: 60px;
+    }
+
+    .header-image img {
+        width: 600px;
+        height: auto;
+    }
+
+    .event-title {
+        font-size: 70px;
+    }
+
+    .event-details {
+        padding: 40px;
+    }
+
+    .about-event h2 {
+        font-size: 28px;
+    }
+
+    .about-event p {
+        font-size: 16px;
+    }
+
+    .schedule-button {
+        font-size: 20px;
+        padding: 20px 40px;
+    }
+
+    .back-button {
+        margin-left: 20px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+    .container {
+        width: 50%;
+    }
+
+    .header-image img {
+        width: 700px;
+    }
+
+    .event-title {
+        font-size: 80px;
+    }
+
+    .about-event h2 {
+        font-size: 32px;
+    }
+
+    .about-event p {
+        font-size: 18px;
+    }
+}
+
+/* Ajustes para móviles pequeños (iPhone 12 Pro y otros) */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .event-title {
+        font-size: 40px; /* Ajustar el tamaño de la fuente en móviles */
+    }
+
+    .event-details {
+        padding: 15px;
+    }
+
+    .schedule-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .back-button {
+        position: fixed; /* Cambiado a fixed */
+        top: 24px;
+        left: 20px;
+    }
+}

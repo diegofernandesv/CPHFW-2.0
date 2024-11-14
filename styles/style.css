@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --accent-color: #000000;
+    --base-color: #F95F19;
+    --text-color: #000000;
+    --input-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/Gradient-CPHFW\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #f5f5f5;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+form label span {
+    font-size: 16px;
+    color: #171717;
+    margin-left: 5px;
+    font-weight: 1000;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    border-radius: 8px;
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top:15px;
+}
+
+.button:hover {
+    background-color: var(--text-color);
+}
+
+p {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+p a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+
+/* Small screens like iPhone SE and iPhone 12 Mini */
+@media (max-width: 375px) {
+    .wrapper {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* iPhone 12 Pro */
+@media (max-width: 390px) {
+    .wrapper {
+        margin-top: 150px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+/* Medium screens like iPhone 11, iPhone XR, and smaller tablets */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+/* iPads in portrait orientation */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        font-size: 16px;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+}
+
+/* iPad Air and iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    body {
+        padding: 20px;
+    }
+
+    .wrapper {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+form input:hover {
+    border-color: var(--base-color);
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+/* Web devices (desktop) */
+@media (min-width: 1367px) {
+    body {
+        padding: 30px;
+    }
+
+    .wrapper {
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 16px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Additional mobile optimization */
+@media (max-width: 640px) {
+    body {
+        padding: 10px;
+    }
+
+    .wrapper {
+        padding: 15px;
+    }
+}

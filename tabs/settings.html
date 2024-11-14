@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="../styles/styleprofile.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-settings">
+        <a href="profile.html" class="back-arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="58"
+            viewBox="0 0 29 58"
+            fill="none"
+          >
+            <path
+              d="M23.0744 42.0983L20.5103 44.66L6.54436 30.6989C6.31924 30.4752 6.14058 30.2092 6.01866 29.9162C5.89675 29.6232 5.83398 29.3089 5.83398 28.9915C5.83398 28.6742 5.89675 28.3599 6.01866 28.0669C6.14058 27.7739 6.31924 27.5079 6.54436 27.2842L20.5103 13.3158L23.072 15.8775L9.96395 28.9879L23.0744 42.0983Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <h1>Settings</h1>
+      </header>
+
+        <section class="accountsetting-section">
+          <h2>Account Settings</h2>
+          <div class="accountsetting-inputs">
+          <div class="input-setting">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Mathias Nielsen">
+          </div>
+          <div class="input-setting">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="mathias.nielsen@gmail.com">
+          </div>
+          <div class="input-setting">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+          </div>
+        </div>
+        </section>
+
+        <section class="settings-section">
+          <!-- Dark Mode Toggle -->
+          <div class="dark-mode-toggle">
+              <span class="dark-mode-text">Dark Mode</span>
+              <label class="switch">
+                  <input type="checkbox" id="darkModeToggle" disabled>
+                  <span class="slider"></span>
+              </label>
+          </div>
+      
+          <!-- Push Notification Toggle -->
+          <div class="dark-mode-toggle">
+              <span class="dark-mode-text">Push Notification</span>
+              <label class="switch">
+                  <input type="checkbox" id="NotificationToggle" disabled>
+                  <span class="slider"></span>
+              </label>
+          </div>
+      </section>
+      
+      <!-- Settings Section -->
+      <div class="profilesetting-buttons">
+        <button id="logoutButton">
+          <span class="icon">
+            <!-- SVG for Log out icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 21C4.45 21 3.97933 20.8043 3.588 20.413C3.19667 20.0217 3.00067 19.5507 3 19V5C3 4.45 3.196 3.97933 3.588 3.588C3.98 3.19667 4.45067 3.00067 5 3H12V5H5V19H12V21H5ZM16 17L14.625 15.55L17.175 13H9V11H17.175L14.625 8.45L16 7L21 12L16 17Z" fill="black"/>
+            </svg>
+          </span>Log out<span class="arrow">
+            <!-- SVG for arrow icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" fill="black">
+              <path d="M-2.21511e-07 2.21627L1.78471 0.500001L11.5055 9.85366C11.6622 10.0035 11.7866 10.1818 11.8715 10.3781C11.9563 10.5744 12 10.7849 12 10.9976C12 11.2102 11.9563 11.4207 11.8715 11.6171C11.7866 11.8134 11.6622 11.9916 11.5055 12.1415L1.7847 21.5L0.00168052 19.7837L9.12538 11L-2.21511e-07 2.21627Z" fill="black"/>
+            </svg>
+          </span>
+        </button>
+      
+        <button id="deleteButton">
+          <span class="icon">
+            <!-- SVG for Delete account icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z" fill="black"/>
+            </svg>
+          </span>Delete account<span class="arrow">
+            <!-- SVG for arrow icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" fill="black">
+              <path d="M-2.21511e-07 2.21627L1.78471 0.500001L11.5055 9.85366C11.6622 10.0035 11.7866 10.1818 11.8715 10.3781C11.9563 10.5744 12 10.7849 12 10.9976C12 11.2102 11.9563 11.4207 11.8715 11.6171C11.7866 11.8134 11.6622 11.9916 11.5055 12.1415L1.7847 21.5L0.00168052 19.7837L9.12538 11L-2.21511e-07 2.21627Z" fill="black"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+      
+      <!-- Log out Confirmation Modal -->
+      <div id="logoutModal" class="modal">
+        <div class="modal-content">
+          <p>Are you sure you want to log out?</p>
+          <button id="confirmLogout">Yes, Log out</button>
+          <button id="cancelLogout">Cancel</button>
+        </div>
+      </div>
+      
+      <!-- Delete Account Confirmation Modal -->
+      <div id="deleteModal" class="modal">
+        <div class="modal-content">
+          <p>Are you sure you want to delete your account?</p>
+          <a href="../index.html" id="confirmDelete" class="button">Yes, Delete Account</a>
+
+          <button id="cancelDelete">Cancel</button>
+        </div>
+      </div>
+      <script src="profilerelated.js"></script>
+  </body>
+</html>

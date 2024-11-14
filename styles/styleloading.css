@@ -1,0 +1,101 @@
+/* Container to hold the video and overlay */
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Full-screen video styling */
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the area without distortion */
+    z-index: 1; /* Places the video behind the text */
+}
+
+/* Overlay text styling */
+.text-overlay {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the video */
+    color: var(--White, #FFF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Move items towards the top */
+    text-align: center;
+    height: 100vh;
+    padding-top: 50px; /* Add some padding from the top */
+}
+
+/* Header styles */
+h1, h2, h3, h4 {
+    font-family: "Instrument Serif", serif; /* Ensure the font is applied */
+    color: var(--White, #FFF);
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h1 { font-size: 90px; }
+h2, h3 { font-size: 70px; }
+h4 {
+    font-size: 85px;
+    width: 418px;
+    height: 138px;
+    flex-shrink: 0;
+}
+
+.h3 {
+    width: 228px;
+    height: 91px;
+    margin-left: 166px;
+    margin-right: 0px;
+}
+
+/* Button styles */
+.button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s ease;
+    color: var(--White, #FFF);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+    margin-top: 50px; /* Space above the button */
+}
+
+/* Center the button horizontally */
+.text-overlay .button {
+    align-self: center; /* Center horizontally */
+    margin: 0; /* Remove any margins that could affect centering */
+    font-weight: 100;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Hover effect */
+}
+
+/* Responsive styling for iPhone */
+@media only screen and (max-width: 767px) {
+    .video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* Responsive styling for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
